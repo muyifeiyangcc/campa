@@ -9,8 +9,8 @@ import UIKit
 import WebKit
 
 enum LinkType: String {
-     case userAgreement = "https://thunderous-maamoul-c62f0b.netlify.app/users"
-     case privacyPolicy = "https://thunderous-maamoul-c62f0b.netlify.app/privacy"
+     case userAgreement = "https://app.9f4v7tml.link/users"
+     case privacyPolicy = "https://app.9f4v7tml.link/privacy"
 }
 
 class WebViewController: BaseViewController {
