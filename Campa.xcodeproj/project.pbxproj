@@ -13,8 +13,6 @@
 		0A0000010000000000000004 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000104 /* HomeViewModel.swift */; };
 		0A0000010000000000000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000105 /* Assets.xcassets */; };
 		0A0000010000000000000006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000106 /* LaunchScreen.storyboard */; };
-		0A0000010000000000000007 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000107 /* HomeViewModelTests.swift */; };
-		0A0000010000000000000008 /* CampaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000108 /* CampaUITests.swift */; };
 		0A0000010000000000000009 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000113 /* SplashViewController.swift */; };
 		0A0000010000000000000010 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000114 /* SplashViewModel.swift */; };
 		0A0000010000000000000011 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000115 /* LoginViewController.swift */; };
@@ -53,12 +51,6 @@
 		0B0000010000000000000006 /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000106 /* ChatRepository.swift */; };
 		0B0000010000000000000007 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000107 /* PostRepository.swift */; };
 		0B0000010000000000000008 /* ActivityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000108 /* ActivityRepository.swift */; };
-		0B0000010000000000000009 /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000109 /* CoreDataStackTests.swift */; };
-		0B000001000000000000000A /* PersistenceEnumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000001000000000000010A /* PersistenceEnumsTests.swift */; };
-		0B000001000000000000000B /* UserRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000001000000000000010B /* UserRepositoryTests.swift */; };
-		0B000001000000000000000C /* ChatRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000001000000000000010C /* ChatRepositoryTests.swift */; };
-		0B000001000000000000000D /* PostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000001000000000000010D /* PostRepositoryTests.swift */; };
-		0B000001000000000000000E /* ActivityRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000001000000000000010E /* ActivityRepositoryTests.swift */; };
 		0B000001000000000000000F /* LocalDataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000110 /* LocalDataSeeder.swift */; };
 		1746C5A32FEBE74900305DF9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5A22FEBE74900305DF9 /* BaseViewController.swift */; };
 		1746C5A92FEBF2BF00305DF9 /* PayAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5A82FEBF2BF00305DF9 /* PayAlertController.swift */; };
@@ -81,23 +73,6 @@
 		17A8B7F92FF35F3200A8E523 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A8B7F82FF35F3200A8E523 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0A0000010000000000000201 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A0000010000000000000301 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A0000010000000000000401;
-			remoteInfo = Campa;
-		};
-		0A0000010000000000000202 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A0000010000000000000301 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A0000010000000000000401;
-			remoteInfo = Campa;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0A0000010000000000000101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A0000010000000000000102 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,12 +80,8 @@
 		0A0000010000000000000104 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		0A0000010000000000000105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A0000010000000000000106 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0A0000010000000000000107 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
-		0A0000010000000000000108 /* CampaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaUITests.swift; sourceTree = "<group>"; };
 		0A0000010000000000000109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A0000010000000000000110 /* Campa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Campa.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A0000010000000000000111 /* CampaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A0000010000000000000112 /* CampaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0000010000000000000113 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		0A0000010000000000000114 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		0A0000010000000000000115 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -146,12 +117,6 @@
 		0B0000010000000000000106 /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
 		0B0000010000000000000107 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
 		0B0000010000000000000108 /* ActivityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRepository.swift; sourceTree = "<group>"; };
-		0B0000010000000000000109 /* CoreDataStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
-		0B000001000000000000010A /* PersistenceEnumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceEnumsTests.swift; sourceTree = "<group>"; };
-		0B000001000000000000010B /* UserRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryTests.swift; sourceTree = "<group>"; };
-		0B000001000000000000010C /* ChatRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepositoryTests.swift; sourceTree = "<group>"; };
-		0B000001000000000000010D /* PostRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryTests.swift; sourceTree = "<group>"; };
-		0B000001000000000000010E /* ActivityRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRepositoryTests.swift; sourceTree = "<group>"; };
 		0B000001000000000000010F /* Campa.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = Campa.xcdatamodeld; sourceTree = "<group>"; };
 		0B0000010000000000000110 /* LocalDataSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSeeder.swift; sourceTree = "<group>"; };
 		1746C5A22FEBE74900305DF9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -188,20 +153,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A0000010000000000000502 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A0000010000000000000503 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -209,8 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				0A0000010000000000000602 /* Campa */,
-				0A0000010000000000000607 /* CampaTests */,
-				0A0000010000000000000608 /* CampaUITests */,
 				17A8B7F72FF35F3200A8E523 /* Frameworks */,
 				0A0000010000000000000609 /* Products */,
 			);
@@ -278,34 +227,10 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		0A0000010000000000000607 /* CampaTests */ = {
-			isa = PBXGroup;
-			children = (
-				0A0000010000000000000107 /* HomeViewModelTests.swift */,
-				0B0000010000000000000109 /* CoreDataStackTests.swift */,
-				0B000001000000000000010A /* PersistenceEnumsTests.swift */,
-				0B000001000000000000010B /* UserRepositoryTests.swift */,
-				0B000001000000000000010C /* ChatRepositoryTests.swift */,
-				0B000001000000000000010D /* PostRepositoryTests.swift */,
-				0B000001000000000000010E /* ActivityRepositoryTests.swift */,
-			);
-			path = CampaTests;
-			sourceTree = "<group>";
-		};
-		0A0000010000000000000608 /* CampaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0A0000010000000000000108 /* CampaUITests.swift */,
-			);
-			path = CampaUITests;
-			sourceTree = "<group>";
-		};
 		0A0000010000000000000609 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				0A0000010000000000000110 /* Campa.app */,
-				0A0000010000000000000111 /* CampaTests.xctest */,
-				0A0000010000000000000112 /* CampaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -519,42 +444,6 @@
 			productReference = 0A0000010000000000000110 /* Campa.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A0000010000000000000402 /* CampaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A0000010000000000000903 /* Build configuration list for PBXNativeTarget "CampaTests" */;
-			buildPhases = (
-				0A0000010000000000000702 /* Sources */,
-				0A0000010000000000000502 /* Frameworks */,
-				0A0000010000000000000802 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A0000010000000000001001 /* PBXTargetDependency */,
-			);
-			name = CampaTests;
-			productName = CampaTests;
-			productReference = 0A0000010000000000000111 /* CampaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0A0000010000000000000403 /* CampaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A0000010000000000000904 /* Build configuration list for PBXNativeTarget "CampaUITests" */;
-			buildPhases = (
-				0A0000010000000000000703 /* Sources */,
-				0A0000010000000000000503 /* Frameworks */,
-				0A0000010000000000000803 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A0000010000000000001002 /* PBXTargetDependency */,
-			);
-			name = CampaUITests;
-			productName = CampaUITests;
-			productReference = 0A0000010000000000000112 /* CampaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -567,14 +456,6 @@
 				TargetAttributes = {
 					0A0000010000000000000401 = {
 						CreatedOnToolsVersion = 15.0;
-					};
-					0A0000010000000000000402 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 0A0000010000000000000401;
-					};
-					0A0000010000000000000403 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 0A0000010000000000000401;
 					};
 				};
 			};
@@ -597,8 +478,6 @@
 			projectRoot = "";
 			targets = (
 				0A0000010000000000000401 /* Campa */,
-				0A0000010000000000000402 /* CampaTests */,
-				0A0000010000000000000403 /* CampaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -610,20 +489,6 @@
 			files = (
 				0A0000010000000000000005 /* Assets.xcassets in Resources */,
 				0A0000010000000000000006 /* LaunchScreen.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A0000010000000000000802 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A0000010000000000000803 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,42 +560,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A0000010000000000000702 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A0000010000000000000007 /* HomeViewModelTests.swift in Sources */,
-				0B0000010000000000000009 /* CoreDataStackTests.swift in Sources */,
-				0B000001000000000000000A /* PersistenceEnumsTests.swift in Sources */,
-				0B000001000000000000000B /* UserRepositoryTests.swift in Sources */,
-				0B000001000000000000000C /* ChatRepositoryTests.swift in Sources */,
-				0B000001000000000000000D /* PostRepositoryTests.swift in Sources */,
-				0B000001000000000000000E /* ActivityRepositoryTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A0000010000000000000703 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A0000010000000000000008 /* CampaUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0A0000010000000000001001 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A0000010000000000000401 /* Campa */;
-			targetProxy = 0A0000010000000000000201 /* PBXContainerItemProxy */;
-		};
-		0A0000010000000000001002 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A0000010000000000000401 /* Campa */;
-			targetProxy = 0A0000010000000000000202 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0A0000010000000000001101 /* Debug */ = {
@@ -864,7 +694,7 @@
 				INFOPLIST_FILE = Campa/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.campa.yuiopqtzjhx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.campa.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -888,7 +718,7 @@
 				INFOPLIST_FILE = Campa/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.campa.yuiopqtzjhx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.campa.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -896,62 +726,6 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.9;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		0A0000010000000000001105 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CampaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.9;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Campa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Campa";
-			};
-			name = Debug;
-		};
-		0A0000010000000000001106 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CampaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.9;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Campa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Campa";
-			};
-			name = Release;
-		};
-		0A0000010000000000001107 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CampaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Campa;
-			};
-			name = Debug;
-		};
-		0A0000010000000000001108 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CampaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Campa;
 			};
 			name = Release;
 		};
@@ -972,24 +746,6 @@
 			buildConfigurations = (
 				0A0000010000000000001103 /* Debug */,
 				0A0000010000000000001104 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A0000010000000000000903 /* Build configuration list for PBXNativeTarget "CampaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A0000010000000000001105 /* Debug */,
-				0A0000010000000000001106 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A0000010000000000000904 /* Build configuration list for PBXNativeTarget "CampaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A0000010000000000001107 /* Debug */,
-				0A0000010000000000001108 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
