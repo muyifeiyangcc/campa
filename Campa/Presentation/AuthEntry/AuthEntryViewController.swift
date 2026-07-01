@@ -13,6 +13,7 @@ final class AuthEntryViewController: UIViewController {
     private let appNameLabel = UILabel()
     private let loginByEmailButton = UIButton(type: .system)
     private let newUserButton = UIButton(type: .system)
+    private let eulaButton = UIButton(type: .custom)
     private let signUpButton = UIButton(type: .system)
     private let dividerStackView = UIStackView()
     private let leftDividerView = UIView()
@@ -94,7 +95,14 @@ final class AuthEntryViewController: UIViewController {
         )
         newUserButton.accessibilityIdentifier = "newUserButton"
         newUserButton.addTarget(self, action: #selector(handleNewUserTapped), for: .touchUpInside)
-
+        eulaButton.translatesAutoresizingMaskIntoConstraints = false
+        eulaButton.backgroundColor = .white
+        eulaButton.layer.cornerRadius = 10
+        eulaButton.setTitle("EULA", for: .normal)
+        eulaButton.setTitleColor(UIColor(red: 52/255.0, green: 4/255.0, blue: 4/255.0, alpha: 1), for: .normal)
+        eulaButton.titleLabel?.font = AppFont.medium(size: 14)
+        eulaButton.accessibilityIdentifier = "eulaButton"
+        eulaButton.addTarget(self, action: #selector(handleEulaTapped), for: .touchUpInside)
         signUpButton.translatesAutoresizingMaskIntoConstraints = false
         signUpButton.setAttributedTitle(makeSignUpAttributedText(), for: .normal)
         signUpButton.titleLabel?.font = AppFont.regular(size: 11)
@@ -178,12 +186,18 @@ final class AuthEntryViewController: UIViewController {
         view.addSubview(appNameLabel)
         view.addSubview(loginByEmailButton)
         view.addSubview(newUserButton)
+        view.addSubview(eulaButton)
         view.addSubview(signUpButton)
         view.addSubview(dividerStackView)
         view.addSubview(appleButton)
         view.addSubview(agreementStackView)
 
         NSLayoutConstraint.activate([
+            eulaButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            eulaButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -18),
+            eulaButton.widthAnchor.constraint(equalToConstant: 56),
+            eulaButton.heightAnchor.constraint(equalToConstant: 31),
+            
             logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 92),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logoImageView.widthAnchor.constraint(equalToConstant: Constants.logoSize),
@@ -196,7 +210,7 @@ final class AuthEntryViewController: UIViewController {
             loginByEmailButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: Constants.horizontalInset),
             loginByEmailButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -Constants.horizontalInset),
             loginByEmailButton.heightAnchor.constraint(equalToConstant: Constants.primaryButtonHeight),
-
+            
             newUserButton.topAnchor.constraint(equalTo: loginByEmailButton.bottomAnchor, constant: 18),
             newUserButton.leadingAnchor.constraint(equalTo: loginByEmailButton.leadingAnchor),
             newUserButton.trailingAnchor.constraint(equalTo: loginByEmailButton.trailingAnchor),
@@ -227,6 +241,9 @@ final class AuthEntryViewController: UIViewController {
     }
 
     @objc private func handleLoginByEmailTapped() {
+        guard guardEULAAccepted() else {
+            return
+        }
         guard guardAgreementSelected() else {
             return
         }
@@ -260,6 +277,9 @@ final class AuthEntryViewController: UIViewController {
     }
 
     @objc private func handleNewUserTapped() {
+        guard guardEULAAccepted() else {
+            return
+        }
         guard guardAgreementSelected() else {
             return
         }
@@ -273,6 +293,16 @@ final class AuthEntryViewController: UIViewController {
             guard let self = self else { return }
             self.switchToMainTabBarController()
         }
+    }
+
+    @objc private func handleEulaTapped() {
+        showEULAViewController()
+    }
+
+    private func showEULAViewController() {
+        let viewController = EULAViewController()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
     private func loginGuestUser() -> User? {
@@ -301,10 +331,17 @@ final class AuthEntryViewController: UIViewController {
     }
 
     @objc private func handleSignUpPromptTapped() {
+        guard guardEULAAccepted() else {
+            return
+        }
+
         navigationController?.pushViewController(SignUpViewController(), animated: true)
     }
 
     @objc private func handleAppleButtonTapped() {
+        guard guardEULAAccepted() else {
+            return
+        }
         guard guardAgreementSelected() else {
             return
         }
@@ -322,6 +359,15 @@ final class AuthEntryViewController: UIViewController {
     private func guardAgreementSelected() -> Bool {
         guard isAgreementSelected else {
             showToast(message: NSLocalizedString("Please agree first", comment: "Agreement required toast"))
+            return false
+        }
+
+        return true
+    }
+
+    private func guardEULAAccepted() -> Bool {
+        guard EULAAgreementStore.isAccepted else {
+            showEULAViewController()
             return false
         }
 

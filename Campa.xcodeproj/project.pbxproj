@@ -71,6 +71,7 @@
 		1746C5C52FEFA00000305DF9 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5C42FEFA00000305DF9 /* WalletViewController.swift */; };
 		1746C5C72FEFB00000305DF9 /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5C62FEFB00000305DF9 /* FollowersViewController.swift */; };
 		17A8B7F92FF35F3200A8E523 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A8B7F82FF35F3200A8E523 /* StoreKit.framework */; };
+		17E11A012FF400000305DF9 /* EULAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E11A002FF400000305DF9 /* EULAViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +140,7 @@
 		1746C5C42FEFA00000305DF9 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		1746C5C62FEFB00000305DF9 /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
 		17A8B7F82FF35F3200A8E523 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		17E11A002FF400000305DF9 /* EULAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EULAViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 				0A000001000000000000012D /* PersonalInfoViewModel.swift */,
 				0A0000010000000000000122 /* ForgotPasswordViewController.swift */,
 				0A0000010000000000000123 /* ForgotPasswordViewModel.swift */,
+				17E11A002FF400000305DF9 /* EULAViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				1746C5C12FEF700000305DF9 /* ActivityDetailViewController.swift in Sources */,
 				1746C5C32FEF800000305DF9 /* ActivityCreateViewController.swift in Sources */,
 				1746C5C52FEFA00000305DF9 /* WalletViewController.swift in Sources */,
+				17E11A012FF400000305DF9 /* EULAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
