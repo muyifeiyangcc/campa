@@ -20,6 +20,11 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 	<key>NSCameraUsageDescription</key>
 	<string>This app requires access to your camera to take photos for uploading personal profile avatars or posting image content. All captured photos are saved locally on your device securely and will only be uploaded or shared after you grant explicit approval.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
