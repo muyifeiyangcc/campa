@@ -694,7 +694,7 @@
 				INFOPLIST_FILE = Campa/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.campa.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.campa.yuiopqtzjhx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -718,7 +718,7 @@
 				INFOPLIST_FILE = Campa/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.campa.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.campa.yuiopqtzjhx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
