@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15000" systemVersion="23A344" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName="Activity" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="addressText" optional="YES" attributeType="String"/>
+        <attribute name="content" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="maxParticipants" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="startAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="status" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="activities" inverseEntity="User"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ActivityImage" inverseName="activity" inverseEntity="Activity"/>
+        <relationship name="participants" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ActivityParticipant" inverseName="activity" inverseEntity="Activity"/>
+    </entity>
+    <entity name="ActivityImage" representedClassName="ActivityImage" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="localPath" attributeType="String"/>
+        <attribute name="sortIndex" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="images" inverseEntity="Activity"/>
+    </entity>
+    <entity name="ActivityParticipant" representedClassName="ActivityParticipant" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="joinedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="role" attributeType="String"/>
+        <attribute name="status" attributeType="String"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="participants" inverseEntity="Activity"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User"/>
+    </entity>
+    <entity name="ChatConversation" representedClassName="ChatConversation" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lastMessageAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastMessageText" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" attributeType="String"/>
+        <attribute name="unreadCount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ChatMessage" inverseName="conversation" inverseEntity="ChatMessage"/>
+        <relationship name="participants" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ChatParticipant" inverseName="conversation" inverseEntity="ChatParticipant"/>
+    </entity>
+    <entity name="ChatMessage" representedClassName="ChatMessage" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="imageLocalPath" optional="YES" attributeType="String"/>
+        <attribute name="messageType" attributeType="String"/>
+        <attribute name="sentAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="status" attributeType="String"/>
+        <relationship name="conversation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatConversation" inverseName="messages" inverseEntity="ChatConversation"/>
+        <relationship name="sender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="messages" inverseEntity="User"/>
+    </entity>
+    <entity name="ChatParticipant" representedClassName="ChatParticipant" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="joinedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="role" optional="YES" attributeType="String"/>
+        <relationship name="conversation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatConversation" inverseName="participants" inverseEntity="ChatConversation"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User"/>
+    </entity>
+    <entity name="Post" representedClassName="Post" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="addressText" optional="YES" attributeType="String"/>
+        <attribute name="commentCount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="content" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="likeCount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="posts" inverseEntity="User"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PostComment" inverseName="post" inverseEntity="PostComment"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PostImage" inverseName="post" inverseEntity="PostImage"/>
+    </entity>
+    <entity name="PostComment" representedClassName="PostComment" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="content" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="comments" inverseEntity="User"/>
+        <relationship name="parentComment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PostComment" inverseName="replies" inverseEntity="PostComment"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="comments" inverseEntity="Post"/>
+        <relationship name="replies" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PostComment" inverseName="parentComment" inverseEntity="PostComment"/>
+    </entity>
+    <entity name="PostImage" representedClassName="PostImage" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="localPath" attributeType="String"/>
+        <attribute name="sortIndex" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="images" inverseEntity="Post"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="avatarLocalPath" optional="YES" attributeType="String"/>
+        <attribute name="bio" optional="YES" attributeType="String"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isCurrentUser" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="nickname" attributeType="String"/>
+        <attribute name="passwordHash" optional="YES" attributeType="String"/>
+        <attribute name="school" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="activities" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Activity" inverseName="author" inverseEntity="Activity"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="PostComment" inverseName="author" inverseEntity="PostComment"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="ChatMessage" inverseName="sender" inverseEntity="ChatMessage"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Post" inverseName="author" inverseEntity="Post"/>
+    </entity>
+    <entity name="UserRelation" representedClassName="UserRelation" syncable="YES" codeGenerationType="manual/none">
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="type" attributeType="String"/>
+        <relationship name="sourceUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User"/>
+        <relationship name="targetUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-441" positionY="-270" width="128" height="255"/>
+        <element name="UserRelation" positionX="-216" positionY="-270" width="128" height="90"/>
+        <element name="ChatConversation" positionX="0" positionY="-270" width="128" height="150"/>
+        <element name="ChatParticipant" positionX="216" positionY="-270" width="128" height="90"/>
+        <element name="ChatMessage" positionX="432" positionY="-270" width="128" height="150"/>
+        <element name="Post" positionX="-216" positionY="27" width="128" height="180"/>
+        <element name="PostImage" positionX="0" positionY="27" width="128" height="90"/>
+        <element name="PostComment" positionX="216" positionY="27" width="128" height="120"/>
+        <element name="Activity" positionX="-216" positionY="288" width="128" height="210"/>
+        <element name="ActivityImage" positionX="0" positionY="288" width="128" height="90"/>
+        <element name="ActivityParticipant" positionX="216" positionY="288" width="128" height="90"/>
+    </elements>
+</model>

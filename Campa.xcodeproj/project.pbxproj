@@ -1,0 +1,1045 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0000010000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000101 /* AppDelegate.swift */; };
+		0A0000010000000000000002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000102 /* SceneDelegate.swift */; };
+		0A0000010000000000000003 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000103 /* HomeViewController.swift */; };
+		0A0000010000000000000004 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000104 /* HomeViewModel.swift */; };
+		0A0000010000000000000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000105 /* Assets.xcassets */; };
+		0A0000010000000000000006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000106 /* LaunchScreen.storyboard */; };
+		0A0000010000000000000007 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000107 /* HomeViewModelTests.swift */; };
+		0A0000010000000000000008 /* CampaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000108 /* CampaUITests.swift */; };
+		0A0000010000000000000009 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000113 /* SplashViewController.swift */; };
+		0A0000010000000000000010 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000114 /* SplashViewModel.swift */; };
+		0A0000010000000000000011 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000115 /* LoginViewController.swift */; };
+		0A0000010000000000000012 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000116 /* LoginViewModel.swift */; };
+		0A0000010000000000000013 /* AuthEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000117 /* AuthEntryViewController.swift */; };
+		0A0000010000000000000014 /* AuthEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000118 /* AuthEntryViewModel.swift */; };
+		0A0000010000000000000016 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000120 /* SignUpViewController.swift */; };
+		0A0000010000000000000017 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000121 /* SignUpViewModel.swift */; };
+		0A0000010000000000000018 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000122 /* ForgotPasswordViewController.swift */; };
+		0A0000010000000000000019 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000123 /* ForgotPasswordViewModel.swift */; };
+		0A000001000000000000001A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000124 /* MainTabBarController.swift */; };
+		0A000001000000000000001B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000125 /* MessagesViewController.swift */; };
+		0A000001000000000000001C /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000126 /* MessagesViewModel.swift */; };
+		0A000001000000000000001D /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000127 /* AppFont.swift */; };
+		0A000001000000000000001E /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000128 /* MessageListViewController.swift */; };
+		0A000001000000000000001F /* MessageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000129 /* MessageListViewModel.swift */; };
+		0A0000010000000000000020 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A000001000000000000012A /* SettingsViewController.swift */; };
+		0A0000010000000000000021 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A000001000000000000012B /* SettingsViewModel.swift */; };
+		0A0000010000000000000022 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A000001000000000000012C /* PersonalInfoViewController.swift */; };
+		0A0000010000000000000023 /* PersonalInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A000001000000000000012D /* PersonalInfoViewModel.swift */; };
+		0A0000010000000000000024 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A000001000000000000012E /* ProfileViewController.swift */; };
+		0A0000010000000000000025 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A000001000000000000012F /* ProfileViewModel.swift */; };
+		0A0000010000000000000026 /* AppToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000130 /* AppToast.swift */; };
+		0A0000010000000000000027 /* AppLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000131 /* AppLoading.swift */; };
+		0A0000010000000000000028 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000132 /* EditProfileViewController.swift */; };
+		0A0000010000000000000029 /* CurrentCityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000133 /* CurrentCityProvider.swift */; };
+		0A000001000000000000002A /* UIImage+Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000134 /* UIImage+Sandbox.swift */; };
+		0A0000010000000000000030 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0000010000000000001301 /* Alamofire */; };
+		0A0000010000000000000031 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0000010000000000001302 /* SnapKit */; };
+		0A0000010000000000000032 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0000010000000000001303 /* IQKeyboardManagerSwift */; };
+		0B0000010000000000000001 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000101 /* CoreDataStack.swift */; };
+		0B0000010000000000000002 /* PersistenceEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000102 /* PersistenceEntities.swift */; };
+		0B0000010000000000000003 /* PersistenceEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000103 /* PersistenceEnums.swift */; };
+		0B0000010000000000000004 /* PersistenceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000104 /* PersistenceError.swift */; };
+		0B0000010000000000000005 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000105 /* UserRepository.swift */; };
+		0B0000010000000000000006 /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000106 /* ChatRepository.swift */; };
+		0B0000010000000000000007 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000107 /* PostRepository.swift */; };
+		0B0000010000000000000008 /* ActivityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000108 /* ActivityRepository.swift */; };
+		0B0000010000000000000009 /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000109 /* CoreDataStackTests.swift */; };
+		0B000001000000000000000A /* PersistenceEnumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000001000000000000010A /* PersistenceEnumsTests.swift */; };
+		0B000001000000000000000B /* UserRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000001000000000000010B /* UserRepositoryTests.swift */; };
+		0B000001000000000000000C /* ChatRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000001000000000000010C /* ChatRepositoryTests.swift */; };
+		0B000001000000000000000D /* PostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000001000000000000010D /* PostRepositoryTests.swift */; };
+		0B000001000000000000000E /* ActivityRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000001000000000000010E /* ActivityRepositoryTests.swift */; };
+		0B000001000000000000000F /* LocalDataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000110 /* LocalDataSeeder.swift */; };
+		1746C5A32FEBE74900305DF9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5A22FEBE74900305DF9 /* BaseViewController.swift */; };
+		1746C5A92FEBF2BF00305DF9 /* PayAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5A82FEBF2BF00305DF9 /* PayAlertController.swift */; };
+		1746C5AB2FECC89200305DF9 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5AA2FECC89200305DF9 /* WebViewController.swift */; };
+		1746C5AD2FECCDD400305DF9 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5AC2FECCDD400305DF9 /* EmptyView.swift */; };
+		1746C5AF2FED11AB00305DF9 /* ReportAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5AE2FED11AB00305DF9 /* ReportAlertController.swift */; };
+		1746C5AF2FEDE00100305DF9 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5AE2FEDE00100305DF9 /* PostViewController.swift */; };
+		1746C5B12FED348900305DF9 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5B02FED348900305DF9 /* AppInfo.swift */; };
+		1746C5B32FEE134400305DF9 /* DeleteUserAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5B22FEE134400305DF9 /* DeleteUserAlertController.swift */; };
+		1746C5B32FEE318500305DF9 /* CampusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5B22FEE318500305DF9 /* CampusViewController.swift */; };
+		1746C5B62FEF1A6B00305DF9 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5B52FEF1A6B00305DF9 /* ReportViewController.swift */; };
+		1746C5B92FEF300000305DF9 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5B82FEF300000305DF9 /* PostDetailViewController.swift */; };
+		1746C5BB2FEF400000305DF9 /* OtherProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5BA2FEF400000305DF9 /* OtherProfileViewController.swift */; };
+		1746C5BD2FEF500000305DF9 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5BC2FEF500000305DF9 /* FollowViewController.swift */; };
+		1746C5BF2FEF600000305DF9 /* BlacklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5BE2FEF600000305DF9 /* BlacklistViewController.swift */; };
+		1746C5C12FEF700000305DF9 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5C02FEF700000305DF9 /* ActivityDetailViewController.swift */; };
+		1746C5C32FEF800000305DF9 /* ActivityCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5C22FEF800000305DF9 /* ActivityCreateViewController.swift */; };
+		1746C5C52FEFA00000305DF9 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5C42FEFA00000305DF9 /* WalletViewController.swift */; };
+		1746C5C72FEFB00000305DF9 /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5C62FEFB00000305DF9 /* FollowersViewController.swift */; };
+		17A8B7F92FF35F3200A8E523 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A8B7F82FF35F3200A8E523 /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A0000010000000000000201 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A0000010000000000000301 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A0000010000000000000401;
+			remoteInfo = Campa;
+		};
+		0A0000010000000000000202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A0000010000000000000301 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A0000010000000000000401;
+			remoteInfo = Campa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A0000010000000000000101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A0000010000000000000102 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0A0000010000000000000103 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0A0000010000000000000104 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0A0000010000000000000105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A0000010000000000000106 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A0000010000000000000107 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		0A0000010000000000000108 /* CampaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaUITests.swift; sourceTree = "<group>"; };
+		0A0000010000000000000109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0000010000000000000110 /* Campa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Campa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0000010000000000000111 /* CampaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0000010000000000000112 /* CampaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0000010000000000000113 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		0A0000010000000000000114 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		0A0000010000000000000115 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0A0000010000000000000116 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0A0000010000000000000117 /* AuthEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntryViewController.swift; sourceTree = "<group>"; };
+		0A0000010000000000000118 /* AuthEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntryViewModel.swift; sourceTree = "<group>"; };
+		0A0000010000000000000120 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0A0000010000000000000121 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		0A0000010000000000000122 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		0A0000010000000000000123 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		0A0000010000000000000124 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		0A0000010000000000000125 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		0A0000010000000000000126 /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+		0A0000010000000000000127 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		0A0000010000000000000128 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		0A0000010000000000000129 /* MessageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewModel.swift; sourceTree = "<group>"; };
+		0A000001000000000000012A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0A000001000000000000012B /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		0A000001000000000000012C /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		0A000001000000000000012D /* PersonalInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewModel.swift; sourceTree = "<group>"; };
+		0A000001000000000000012E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0A000001000000000000012F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		0A0000010000000000000130 /* AppToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppToast.swift; sourceTree = "<group>"; };
+		0A0000010000000000000131 /* AppLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoading.swift; sourceTree = "<group>"; };
+		0A0000010000000000000132 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		0A0000010000000000000133 /* CurrentCityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCityProvider.swift; sourceTree = "<group>"; };
+		0A0000010000000000000134 /* UIImage+Sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Sandbox.swift"; sourceTree = "<group>"; };
+		0B0000010000000000000101 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0B0000010000000000000102 /* PersistenceEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceEntities.swift; sourceTree = "<group>"; };
+		0B0000010000000000000103 /* PersistenceEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceEnums.swift; sourceTree = "<group>"; };
+		0B0000010000000000000104 /* PersistenceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceError.swift; sourceTree = "<group>"; };
+		0B0000010000000000000105 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		0B0000010000000000000106 /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
+		0B0000010000000000000107 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
+		0B0000010000000000000108 /* ActivityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRepository.swift; sourceTree = "<group>"; };
+		0B0000010000000000000109 /* CoreDataStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
+		0B000001000000000000010A /* PersistenceEnumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceEnumsTests.swift; sourceTree = "<group>"; };
+		0B000001000000000000010B /* UserRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryTests.swift; sourceTree = "<group>"; };
+		0B000001000000000000010C /* ChatRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepositoryTests.swift; sourceTree = "<group>"; };
+		0B000001000000000000010D /* PostRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryTests.swift; sourceTree = "<group>"; };
+		0B000001000000000000010E /* ActivityRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRepositoryTests.swift; sourceTree = "<group>"; };
+		0B000001000000000000010F /* Campa.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = Campa.xcdatamodeld; sourceTree = "<group>"; };
+		0B0000010000000000000110 /* LocalDataSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSeeder.swift; sourceTree = "<group>"; };
+		1746C5A22FEBE74900305DF9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1746C5A82FEBF2BF00305DF9 /* PayAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayAlertController.swift; sourceTree = "<group>"; };
+		1746C5AA2FECC89200305DF9 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		1746C5AC2FECCDD400305DF9 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		1746C5AE2FED11AB00305DF9 /* ReportAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAlertController.swift; sourceTree = "<group>"; };
+		1746C5AE2FEDE00100305DF9 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		1746C5B02FED348900305DF9 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		1746C5B12FEE015A00305DF9 /* Campa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Campa.entitlements; sourceTree = "<group>"; };
+		1746C5B22FEE134400305DF9 /* DeleteUserAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserAlertController.swift; sourceTree = "<group>"; };
+		1746C5B22FEE318500305DF9 /* CampusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusViewController.swift; sourceTree = "<group>"; };
+		1746C5B52FEF1A6B00305DF9 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		1746C5B82FEF300000305DF9 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		1746C5BA2FEF400000305DF9 /* OtherProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileViewController.swift; sourceTree = "<group>"; };
+		1746C5BC2FEF500000305DF9 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		1746C5BE2FEF600000305DF9 /* BlacklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlacklistViewController.swift; sourceTree = "<group>"; };
+		1746C5C02FEF700000305DF9 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		1746C5C22FEF800000305DF9 /* ActivityCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCreateViewController.swift; sourceTree = "<group>"; };
+		1746C5C42FEFA00000305DF9 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		1746C5C62FEFB00000305DF9 /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		17A8B7F82FF35F3200A8E523 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A0000010000000000000501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0000010000000000000030 /* Alamofire in Frameworks */,
+				0A0000010000000000000031 /* SnapKit in Frameworks */,
+				0A0000010000000000000032 /* IQKeyboardManagerSwift in Frameworks */,
+				17A8B7F92FF35F3200A8E523 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0000010000000000000502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0000010000000000000503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0000010000000000000601 = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000602 /* Campa */,
+				0A0000010000000000000607 /* CampaTests */,
+				0A0000010000000000000608 /* CampaUITests */,
+				17A8B7F72FF35F3200A8E523 /* Frameworks */,
+				0A0000010000000000000609 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000602 /* Campa */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000603 /* App */,
+				0B0000010000000000000601 /* Data */,
+				0A0000010000000000000604 /* Presentation */,
+				0A0000010000000000000606 /* Resources */,
+				1746C5B12FEE015A00305DF9 /* Campa.entitlements */,
+			);
+			path = Campa;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000603 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000101 /* AppDelegate.swift */,
+				0A0000010000000000000102 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000604 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1746C5A52FEBF02900305DF9 /* Base */,
+				1746C5A42FEBF02300305DF9 /* Alert */,
+				0A0000010000000000000615 /* Common */,
+				0A0000010000000000000613 /* Root */,
+				0A0000010000000000000611 /* Login */,
+				0A0000010000000000000612 /* AuthEntry */,
+				0A0000010000000000000610 /* Splash */,
+				0A0000010000000000000605 /* Home */,
+				1746C5B42FEE318500305DF9 /* Campus */,
+				1746C5B02FEDE00100305DF9 /* Post */,
+				1746C5B72FEF1A6B00305DF9 /* Report */,
+				0A0000010000000000000614 /* Messages */,
+				0A0000010000000000000616 /* Settings */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000605 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000103 /* HomeViewController.swift */,
+				0A0000010000000000000104 /* HomeViewModel.swift */,
+				1746C5B82FEF300000305DF9 /* PostDetailViewController.swift */,
+				1746C5AC2FECCDD400305DF9 /* EmptyView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000606 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000105 /* Assets.xcassets */,
+				0A0000010000000000000106 /* LaunchScreen.storyboard */,
+				0A0000010000000000000109 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000607 /* CampaTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000107 /* HomeViewModelTests.swift */,
+				0B0000010000000000000109 /* CoreDataStackTests.swift */,
+				0B000001000000000000010A /* PersistenceEnumsTests.swift */,
+				0B000001000000000000010B /* UserRepositoryTests.swift */,
+				0B000001000000000000010C /* ChatRepositoryTests.swift */,
+				0B000001000000000000010D /* PostRepositoryTests.swift */,
+				0B000001000000000000010E /* ActivityRepositoryTests.swift */,
+			);
+			path = CampaTests;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000608 /* CampaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000108 /* CampaUITests.swift */,
+			);
+			path = CampaUITests;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000110 /* Campa.app */,
+				0A0000010000000000000111 /* CampaTests.xctest */,
+				0A0000010000000000000112 /* CampaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000610 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000113 /* SplashViewController.swift */,
+				0A0000010000000000000114 /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000611 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000115 /* LoginViewController.swift */,
+				0A0000010000000000000116 /* LoginViewModel.swift */,
+				0A0000010000000000000120 /* SignUpViewController.swift */,
+				0A0000010000000000000121 /* SignUpViewModel.swift */,
+				0A000001000000000000012C /* PersonalInfoViewController.swift */,
+				0A000001000000000000012D /* PersonalInfoViewModel.swift */,
+				0A0000010000000000000122 /* ForgotPasswordViewController.swift */,
+				0A0000010000000000000123 /* ForgotPasswordViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000612 /* AuthEntry */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000117 /* AuthEntryViewController.swift */,
+				0A0000010000000000000118 /* AuthEntryViewModel.swift */,
+			);
+			path = AuthEntry;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000613 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000124 /* MainTabBarController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000614 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000125 /* MessagesViewController.swift */,
+				0A0000010000000000000126 /* MessagesViewModel.swift */,
+				0A0000010000000000000128 /* MessageListViewController.swift */,
+				0A0000010000000000000129 /* MessageListViewModel.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000615 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000127 /* AppFont.swift */,
+				0A0000010000000000000130 /* AppToast.swift */,
+				0A0000010000000000000131 /* AppLoading.swift */,
+				1746C5B02FED348900305DF9 /* AppInfo.swift */,
+				0A0000010000000000000133 /* CurrentCityProvider.swift */,
+				0A0000010000000000000134 /* UIImage+Sandbox.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000616 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0A000001000000000000012A /* SettingsViewController.swift */,
+				0A000001000000000000012B /* SettingsViewModel.swift */,
+				0A000001000000000000012E /* ProfileViewController.swift */,
+				0A000001000000000000012F /* ProfileViewModel.swift */,
+				1746C5BA2FEF400000305DF9 /* OtherProfileViewController.swift */,
+				1746C5BC2FEF500000305DF9 /* FollowViewController.swift */,
+				1746C5C62FEFB00000305DF9 /* FollowersViewController.swift */,
+				1746C5BE2FEF600000305DF9 /* BlacklistViewController.swift */,
+				1746C5C42FEFA00000305DF9 /* WalletViewController.swift */,
+				0A0000010000000000000132 /* EditProfileViewController.swift */,
+				1746C5AA2FECC89200305DF9 /* WebViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0B0000010000000000000601 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0B0000010000000000000602 /* Persistence */,
+				0B0000010000000000000603 /* Models */,
+				0B0000010000000000000604 /* Repositories */,
+				0B0000010000000000000605 /* Seed */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0B0000010000000000000602 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				0B0000010000000000000101 /* CoreDataStack.swift */,
+				0B000001000000000000010F /* Campa.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		0B0000010000000000000603 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B0000010000000000000102 /* PersistenceEntities.swift */,
+				0B0000010000000000000103 /* PersistenceEnums.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B0000010000000000000604 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0B0000010000000000000104 /* PersistenceError.swift */,
+				0B0000010000000000000105 /* UserRepository.swift */,
+				0B0000010000000000000106 /* ChatRepository.swift */,
+				0B0000010000000000000107 /* PostRepository.swift */,
+				0B0000010000000000000108 /* ActivityRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0B0000010000000000000605 /* Seed */ = {
+			isa = PBXGroup;
+			children = (
+				0B0000010000000000000110 /* LocalDataSeeder.swift */,
+			);
+			path = Seed;
+			sourceTree = "<group>";
+		};
+		1746C5A42FEBF02300305DF9 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				1746C5B22FEE134400305DF9 /* DeleteUserAlertController.swift */,
+				1746C5A82FEBF2BF00305DF9 /* PayAlertController.swift */,
+				1746C5AE2FED11AB00305DF9 /* ReportAlertController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		1746C5A52FEBF02900305DF9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1746C5A22FEBE74900305DF9 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1746C5B02FEDE00100305DF9 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				1746C5AE2FEDE00100305DF9 /* PostViewController.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		1746C5B42FEE318500305DF9 /* Campus */ = {
+			isa = PBXGroup;
+			children = (
+				1746C5B22FEE318500305DF9 /* CampusViewController.swift */,
+				1746C5C02FEF700000305DF9 /* ActivityDetailViewController.swift */,
+				1746C5C22FEF800000305DF9 /* ActivityCreateViewController.swift */,
+			);
+			path = Campus;
+			sourceTree = "<group>";
+		};
+		1746C5B72FEF1A6B00305DF9 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				1746C5B52FEF1A6B00305DF9 /* ReportViewController.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		17A8B7F72FF35F3200A8E523 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17A8B7F82FF35F3200A8E523 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A0000010000000000000401 /* Campa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0000010000000000000902 /* Build configuration list for PBXNativeTarget "Campa" */;
+			buildPhases = (
+				0A0000010000000000000701 /* Sources */,
+				0A0000010000000000000501 /* Frameworks */,
+				0A0000010000000000000801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Campa;
+			packageProductDependencies = (
+				0A0000010000000000001301 /* Alamofire */,
+				0A0000010000000000001302 /* SnapKit */,
+				0A0000010000000000001303 /* IQKeyboardManagerSwift */,
+			);
+			productName = Campa;
+			productReference = 0A0000010000000000000110 /* Campa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A0000010000000000000402 /* CampaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0000010000000000000903 /* Build configuration list for PBXNativeTarget "CampaTests" */;
+			buildPhases = (
+				0A0000010000000000000702 /* Sources */,
+				0A0000010000000000000502 /* Frameworks */,
+				0A0000010000000000000802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A0000010000000000001001 /* PBXTargetDependency */,
+			);
+			name = CampaTests;
+			productName = CampaTests;
+			productReference = 0A0000010000000000000111 /* CampaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A0000010000000000000403 /* CampaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0000010000000000000904 /* Build configuration list for PBXNativeTarget "CampaUITests" */;
+			buildPhases = (
+				0A0000010000000000000703 /* Sources */,
+				0A0000010000000000000503 /* Frameworks */,
+				0A0000010000000000000803 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A0000010000000000001002 /* PBXTargetDependency */,
+			);
+			name = CampaUITests;
+			productName = CampaUITests;
+			productReference = 0A0000010000000000000112 /* CampaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A0000010000000000000301 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0A0000010000000000000401 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					0A0000010000000000000402 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 0A0000010000000000000401;
+					};
+					0A0000010000000000000403 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 0A0000010000000000000401;
+					};
+				};
+			};
+			buildConfigurationList = 0A0000010000000000000901 /* Build configuration list for PBXProject "Campa" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A0000010000000000000601;
+			packageReferences = (
+				0A0000010000000000001201 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0A0000010000000000001202 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				0A0000010000000000001203 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 0A0000010000000000000609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A0000010000000000000401 /* Campa */,
+				0A0000010000000000000402 /* CampaTests */,
+				0A0000010000000000000403 /* CampaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A0000010000000000000801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0000010000000000000005 /* Assets.xcassets in Resources */,
+				0A0000010000000000000006 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0000010000000000000802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0000010000000000000803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A0000010000000000000701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0000010000000000000001 /* AppDelegate.swift in Sources */,
+				0A0000010000000000000002 /* SceneDelegate.swift in Sources */,
+				0A000001000000000000001D /* AppFont.swift in Sources */,
+				0A0000010000000000000026 /* AppToast.swift in Sources */,
+				0A0000010000000000000027 /* AppLoading.swift in Sources */,
+				0A0000010000000000000029 /* CurrentCityProvider.swift in Sources */,
+				0A000001000000000000002A /* UIImage+Sandbox.swift in Sources */,
+				0A0000010000000000000028 /* EditProfileViewController.swift in Sources */,
+				0A000001000000000000001A /* MainTabBarController.swift in Sources */,
+				1746C5A92FEBF2BF00305DF9 /* PayAlertController.swift in Sources */,
+				1746C5A32FEBE74900305DF9 /* BaseViewController.swift in Sources */,
+				0A0000010000000000000013 /* AuthEntryViewController.swift in Sources */,
+				0A0000010000000000000014 /* AuthEntryViewModel.swift in Sources */,
+				0A0000010000000000000011 /* LoginViewController.swift in Sources */,
+				0A0000010000000000000012 /* LoginViewModel.swift in Sources */,
+				0A0000010000000000000016 /* SignUpViewController.swift in Sources */,
+				0A0000010000000000000017 /* SignUpViewModel.swift in Sources */,
+				1746C5AB2FECC89200305DF9 /* WebViewController.swift in Sources */,
+				0A0000010000000000000022 /* PersonalInfoViewController.swift in Sources */,
+				0A0000010000000000000023 /* PersonalInfoViewModel.swift in Sources */,
+				0A0000010000000000000018 /* ForgotPasswordViewController.swift in Sources */,
+				1746C5B12FED348900305DF9 /* AppInfo.swift in Sources */,
+				0A0000010000000000000019 /* ForgotPasswordViewModel.swift in Sources */,
+				0A000001000000000000001B /* MessagesViewController.swift in Sources */,
+				0A000001000000000000001C /* MessagesViewModel.swift in Sources */,
+				0A000001000000000000001E /* MessageListViewController.swift in Sources */,
+				0A000001000000000000001F /* MessageListViewModel.swift in Sources */,
+				0A0000010000000000000020 /* SettingsViewController.swift in Sources */,
+				0A0000010000000000000021 /* SettingsViewModel.swift in Sources */,
+				0A0000010000000000000024 /* ProfileViewController.swift in Sources */,
+				1746C5AF2FED11AB00305DF9 /* ReportAlertController.swift in Sources */,
+				0A0000010000000000000025 /* ProfileViewModel.swift in Sources */,
+				0A0000010000000000000009 /* SplashViewController.swift in Sources */,
+				0A0000010000000000000010 /* SplashViewModel.swift in Sources */,
+				1746C5AD2FECCDD400305DF9 /* EmptyView.swift in Sources */,
+				0A0000010000000000000003 /* HomeViewController.swift in Sources */,
+				0A0000010000000000000004 /* HomeViewModel.swift in Sources */,
+				1746C5B32FEE134400305DF9 /* DeleteUserAlertController.swift in Sources */,
+				0B0000010000000000000001 /* CoreDataStack.swift in Sources */,
+				0B0000010000000000000002 /* PersistenceEntities.swift in Sources */,
+				0B0000010000000000000003 /* PersistenceEnums.swift in Sources */,
+				0B0000010000000000000004 /* PersistenceError.swift in Sources */,
+				0B0000010000000000000005 /* UserRepository.swift in Sources */,
+				0B0000010000000000000006 /* ChatRepository.swift in Sources */,
+				0B0000010000000000000007 /* PostRepository.swift in Sources */,
+				0B0000010000000000000008 /* ActivityRepository.swift in Sources */,
+				0B000001000000000000000F /* LocalDataSeeder.swift in Sources */,
+				1746C5AF2FEDE00100305DF9 /* PostViewController.swift in Sources */,
+				1746C5B32FEE318500305DF9 /* CampusViewController.swift in Sources */,
+				1746C5B62FEF1A6B00305DF9 /* ReportViewController.swift in Sources */,
+				1746C5B92FEF300000305DF9 /* PostDetailViewController.swift in Sources */,
+				1746C5BB2FEF400000305DF9 /* OtherProfileViewController.swift in Sources */,
+				1746C5BD2FEF500000305DF9 /* FollowViewController.swift in Sources */,
+				1746C5C72FEFB00000305DF9 /* FollowersViewController.swift in Sources */,
+				1746C5BF2FEF600000305DF9 /* BlacklistViewController.swift in Sources */,
+				1746C5C12FEF700000305DF9 /* ActivityDetailViewController.swift in Sources */,
+				1746C5C32FEF800000305DF9 /* ActivityCreateViewController.swift in Sources */,
+				1746C5C52FEFA00000305DF9 /* WalletViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0000010000000000000702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0000010000000000000007 /* HomeViewModelTests.swift in Sources */,
+				0B0000010000000000000009 /* CoreDataStackTests.swift in Sources */,
+				0B000001000000000000000A /* PersistenceEnumsTests.swift in Sources */,
+				0B000001000000000000000B /* UserRepositoryTests.swift in Sources */,
+				0B000001000000000000000C /* ChatRepositoryTests.swift in Sources */,
+				0B000001000000000000000D /* PostRepositoryTests.swift in Sources */,
+				0B000001000000000000000E /* ActivityRepositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0000010000000000000703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0000010000000000000008 /* CampaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A0000010000000000001001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A0000010000000000000401 /* Campa */;
+			targetProxy = 0A0000010000000000000201 /* PBXContainerItemProxy */;
+		};
+		0A0000010000000000001002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A0000010000000000000401 /* Campa */;
+			targetProxy = 0A0000010000000000000202 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A0000010000000000001101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		0A0000010000000000001102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A0000010000000000001103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Campa/Campa.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NUFR97X3A;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Campa/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.myfy.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0A0000010000000000001104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Campa/Campa.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NUFR97X3A;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Campa/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.myfy.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0A0000010000000000001105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CampaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Campa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Campa";
+			};
+			name = Debug;
+		};
+		0A0000010000000000001106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CampaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Campa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Campa";
+			};
+			name = Release;
+		};
+		0A0000010000000000001107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CampaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Campa;
+			};
+			name = Debug;
+		};
+		0A0000010000000000001108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CampaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Campa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A0000010000000000000901 /* Build configuration list for PBXProject "Campa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0000010000000000001101 /* Debug */,
+				0A0000010000000000001102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A0000010000000000000902 /* Build configuration list for PBXNativeTarget "Campa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0000010000000000001103 /* Debug */,
+				0A0000010000000000001104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A0000010000000000000903 /* Build configuration list for PBXNativeTarget "CampaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0000010000000000001105 /* Debug */,
+				0A0000010000000000001106 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A0000010000000000000904 /* Build configuration list for PBXNativeTarget "CampaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0000010000000000001107 /* Debug */,
+				0A0000010000000000001108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A0000010000000000001201 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.0;
+			};
+		};
+		0A0000010000000000001202 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		0A0000010000000000001203 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A0000010000000000001301 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A0000010000000000001201 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0A0000010000000000001302 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A0000010000000000001202 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		0A0000010000000000001303 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A0000010000000000001203 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0A0000010000000000000301 /* Project object */;
+}
