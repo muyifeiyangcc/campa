@@ -23,14 +23,14 @@ final class WalletViewController: BaseViewController {
     private let products: [WalletProduct] = [
         WalletProduct(productId: "mumyizhsdfvsbpbb", amount: "400", price: "$0.99"),
         WalletProduct(productId: "uiowzrkitnxdaqvb", amount: "800", price: "$1.99"),
-        WalletProduct(productId: "kjhgfdsazxcvbnmq", amount: "1780", price: "$3.99"),
+        WalletProduct(productId: "ifhgfdsazxcvbnmq", amount: "1780", price: "$3.99"),
         WalletProduct(productId: "yggwhyexpjawrqzk", amount: "2450", price: "$4.99"),
-        WalletProduct(productId: "yuoficglaacdnrci", amount: "5150", price: "$ 9.99"),
+        WalletProduct(productId: "yuoficglaacdnrci", amount: "5150", price: "$9.99"),
         WalletProduct(productId: "diijztiisphqpmpv", amount: "10800", price: "$19.99"),
-        WalletProduct(productId: "sazwsxedcrfvtgby", amount: "14900", price: "$ 29.99"),
-        WalletProduct(productId: "dleeglukfmsofayo", amount: "29400", price: "$ 49.99"),
-        WalletProduct(productId: "xkpwbxmqzfgvjrhs", amount: "34500", price: "$ 69.99"),
-        WalletProduct(productId: "adlvqzvpnyfuojhc", amount: "63700", price: "$ 99.99"),
+        WalletProduct(productId: "sazwsxedcrfvtgby", amount: "14900", price: "$29.99"),
+        WalletProduct(productId: "dleeglukfmsofayo", amount: "29400", price: "$49.99"),
+        WalletProduct(productId: "xkpwbxmqzfgvjrhs", amount: "34500", price: "$69.99"),
+        WalletProduct(productId: "adlvqzvpnyfuojhc", amount: "63700", price: "$99.99"),
     ]
 
     init(userRepository: UserRepository = UserRepository()) {
@@ -291,8 +291,7 @@ extension WalletViewController: UICollectionViewDataSource, UICollectionViewDele
 private extension WalletViewController {
     func guardRegisteredUser() -> Bool {
         guard let user = loadCurrentUser(), !isGuestUser(user) else {
-            AppToast.show(message: NSLocalizedString("Please login first.", comment: "Guest purchase login toast"), in: view)
-            showLogin()
+            showLoginAlert()
             return false
         }
         return true
@@ -320,16 +319,12 @@ private extension WalletViewController {
         return user.email?.lowercased().hasSuffix("@guest.campa") == true
     }
 
-    func showLogin() {
-        UserDefaults.standard.removeObject(forKey: CurrentUserIdKey)
-
-        guard let window = view.window else {
-            navigationController?.pushViewController(AuthEntryViewController(), animated: true)
+    func showLoginAlert() {
+        guard presentedViewController == nil else {
             return
         }
 
-        window.rootViewController = UINavigationController(rootViewController: AuthEntryViewController())
-        window.makeKeyAndVisible()
+        present(LoginAlertController(), animated: false)
     }
 }
 

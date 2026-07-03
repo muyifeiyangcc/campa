@@ -235,11 +235,6 @@ final class PostViewController: BaseViewController {
         let content = textView.text.trimmingCharacters(in: .whitespacesAndNewlines)
         let addressText = locationLabel.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 
-        guard !content.isEmpty, !addressText.isEmpty, !selectedImages.isEmpty else {
-            showToast(message: NSLocalizedString("Please complete post information", comment: "Post required fields toast"))
-            return
-        }
-
         guard let userIdString = UserDefaults.standard.string(forKey: CurrentUserIdKey),
               let userId = UUID(uuidString: userIdString),
               case .success(let currentUser) = userRepository.fetchUser(id: userId) else {
@@ -248,8 +243,12 @@ final class PostViewController: BaseViewController {
         }
 
         guard !isGuestUser(currentUser) else {
-            showToast(message: NSLocalizedString("Please login first.", comment: "Guest publish login toast"))
-            showLogin()
+            showLoginAlert()
+            return
+        }
+
+        guard !content.isEmpty, !addressText.isEmpty, !selectedImages.isEmpty else {
+            showToast(message: NSLocalizedString("Please complete post information", comment: "Post required fields toast"))
             return
         }
 
@@ -334,17 +333,12 @@ final class PostViewController: BaseViewController {
         return user.email?.lowercased().hasSuffix("@guest.campa") == true
     }
 
-    private func showLogin() {
-        UserDefaults.standard.removeObject(forKey: CurrentUserIdKey)
-
-        guard let window = view.window else {
-            navigationController?.pushViewController(AuthEntryViewController(), animated: true)
+    private func showLoginAlert() {
+        guard presentedViewController == nil else {
             return
         }
 
-        UIView.transition(with: window, duration: 0.25, options: .transitionCrossDissolve) {
-            window.rootViewController = UINavigationController(rootViewController: AuthEntryViewController())
-        }
+        present(LoginAlertController(), animated: false)
     }
 
     private func makePostTitle(from content: String) -> String {

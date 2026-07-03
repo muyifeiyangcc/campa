@@ -40,9 +40,6 @@
 		0A0000010000000000000028 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000132 /* EditProfileViewController.swift */; };
 		0A0000010000000000000029 /* CurrentCityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000133 /* CurrentCityProvider.swift */; };
 		0A000001000000000000002A /* UIImage+Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000134 /* UIImage+Sandbox.swift */; };
-		0A0000010000000000000030 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0000010000000000001301 /* Alamofire */; };
-		0A0000010000000000000031 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0000010000000000001302 /* SnapKit */; };
-		0A0000010000000000000032 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0000010000000000001303 /* IQKeyboardManagerSwift */; };
 		0B0000010000000000000001 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000101 /* CoreDataStack.swift */; };
 		0B0000010000000000000002 /* PersistenceEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000102 /* PersistenceEntities.swift */; };
 		0B0000010000000000000003 /* PersistenceEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000010000000000000103 /* PersistenceEnums.swift */; };
@@ -72,6 +69,8 @@
 		1746C5C72FEFB00000305DF9 /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746C5C62FEFB00000305DF9 /* FollowersViewController.swift */; };
 		17A8B7F92FF35F3200A8E523 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A8B7F82FF35F3200A8E523 /* StoreKit.framework */; };
 		17E11A012FF400000305DF9 /* EULAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E11A002FF400000305DF9 /* EULAViewController.swift */; };
+		17F000012FF800000305DF9 /* LoginAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F000002FF800000305DF9 /* LoginAlertController.swift */; };
+		E09A38267C3D1AD665A814FA /* Pods_Campa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67E5185D5DA9D4E083BDBE1 /* Pods_Campa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +140,10 @@
 		1746C5C62FEFB00000305DF9 /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
 		17A8B7F82FF35F3200A8E523 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		17E11A002FF400000305DF9 /* EULAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EULAViewController.swift; sourceTree = "<group>"; };
+		17F000002FF800000305DF9 /* LoginAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAlertController.swift; sourceTree = "<group>"; };
+		B67E5185D5DA9D4E083BDBE1 /* Pods_Campa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Campa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E37784DB4B921FA0D8D88F /* Pods-Campa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campa.debug.xcconfig"; path = "Target Support Files/Pods-Campa/Pods-Campa.debug.xcconfig"; sourceTree = "<group>"; };
+		E11BA1FA71F6A4A41A8002D0 /* Pods-Campa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campa.release.xcconfig"; path = "Target Support Files/Pods-Campa/Pods-Campa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,22 +151,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0000010000000000000030 /* Alamofire in Frameworks */,
-				0A0000010000000000000031 /* SnapKit in Frameworks */,
-				0A0000010000000000000032 /* IQKeyboardManagerSwift in Frameworks */,
 				17A8B7F92FF35F3200A8E523 /* StoreKit.framework in Frameworks */,
+				E09A38267C3D1AD665A814FA /* Pods_Campa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02BB648ADE795E5A69D4C0D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7E37784DB4B921FA0D8D88F /* Pods-Campa.debug.xcconfig */,
+				E11BA1FA71F6A4A41A8002D0 /* Pods-Campa.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		0A0000010000000000000601 = {
 			isa = PBXGroup;
 			children = (
 				0A0000010000000000000602 /* Campa */,
 				17A8B7F72FF35F3200A8E523 /* Frameworks */,
 				0A0000010000000000000609 /* Products */,
+				02BB648ADE795E5A69D4C0D7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -374,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				1746C5B22FEE134400305DF9 /* DeleteUserAlertController.swift */,
+				17F000002FF800000305DF9 /* LoginAlertController.swift */,
 				1746C5A82FEBF2BF00305DF9 /* PayAlertController.swift */,
 				1746C5AE2FED11AB00305DF9 /* ReportAlertController.swift */,
 			);
@@ -418,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				17A8B7F82FF35F3200A8E523 /* StoreKit.framework */,
+				B67E5185D5DA9D4E083BDBE1 /* Pods_Campa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -429,20 +443,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A0000010000000000000902 /* Build configuration list for PBXNativeTarget "Campa" */;
 			buildPhases = (
+				3DDE330D2006D070DCFEAA26 /* [CP] Check Pods Manifest.lock */,
 				0A0000010000000000000701 /* Sources */,
 				0A0000010000000000000501 /* Frameworks */,
 				0A0000010000000000000801 /* Resources */,
+				B83E19EE75A59DEFF2875C7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Campa;
-			packageProductDependencies = (
-				0A0000010000000000001301 /* Alamofire */,
-				0A0000010000000000001302 /* SnapKit */,
-				0A0000010000000000001303 /* IQKeyboardManagerSwift */,
-			);
 			productName = Campa;
 			productReference = 0A0000010000000000000110 /* Campa.app */;
 			productType = "com.apple.product-type.application";
@@ -471,11 +482,6 @@
 				Base,
 			);
 			mainGroup = 0A0000010000000000000601;
-			packageReferences = (
-				0A0000010000000000001201 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				0A0000010000000000001202 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				0A0000010000000000001203 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-			);
 			productRefGroup = 0A0000010000000000000609 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -497,6 +503,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DDE330D2006D070DCFEAA26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Campa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B83E19EE75A59DEFF2875C7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campa/Pods-Campa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campa/Pods-Campa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Campa/Pods-Campa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A0000010000000000000701 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -512,6 +560,7 @@
 				0A0000010000000000000028 /* EditProfileViewController.swift in Sources */,
 				0A000001000000000000001A /* MainTabBarController.swift in Sources */,
 				1746C5A92FEBF2BF00305DF9 /* PayAlertController.swift in Sources */,
+				17F000012FF800000305DF9 /* LoginAlertController.swift in Sources */,
 				1746C5A32FEBE74900305DF9 /* BaseViewController.swift in Sources */,
 				0A0000010000000000000013 /* AuthEntryViewController.swift in Sources */,
 				0A0000010000000000000014 /* AuthEntryViewModel.swift in Sources */,
@@ -687,6 +736,7 @@
 		};
 		0A0000010000000000001103 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E37784DB4B921FA0D8D88F /* Pods-Campa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -698,7 +748,7 @@
 				INFOPLIST_FILE = Campa/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.campa.yuiopqtzjhx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.campa.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -711,6 +761,7 @@
 		};
 		0A0000010000000000001104 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E11BA1FA71F6A4A41A8002D0 /* Pods-Campa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -722,7 +773,7 @@
 				INFOPLIST_FILE = Campa/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.campa.yuiopqtzjhx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.campa.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -755,51 +806,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		0A0000010000000000001201 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.10.0;
-			};
-		};
-		0A0000010000000000001202 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
-		0A0000010000000000001203 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:hackiftekhar/IQKeyboardManager.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0A0000010000000000001301 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0A0000010000000000001201 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		0A0000010000000000001302 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0A0000010000000000001202 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		0A0000010000000000001303 /* IQKeyboardManagerSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0A0000010000000000001203 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
-			productName = IQKeyboardManagerSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A0000010000000000000301 /* Project object */;
 }
